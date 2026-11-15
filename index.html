@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07101f">
+  <title>Portfolio Book Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <h1 class="demo-title">Portfolio Book Animation</h1>
+    <section class="portfolio-frame" aria-label="Interactive portfolio book">
+      <header class="book-heading">
+        <h2>Nilesh Mhatre</h2>
+        <p>UI/UX DESIGNER · WEB DEVELOPER · TECHNOLOGY CONSULTANT</p>
+      </header>
+
+      <div class="book-scene" id="bookScene">
+        <div class="book-spread" id="bookSpread">
+          <article class="book-page left-page" id="leftPage" aria-live="polite"></article>
+          <article class="book-page right-page" id="rightPage" aria-live="polite"></article>
+          <div class="book-gutter"></div>
+        </div>
+      </div>
+
+      <nav class="book-controls" aria-label="Book navigation">
+        <button id="prevBtn" class="nav-btn secondary" type="button">← Previous</button>
+        <span id="pageIndicator" class="page-indicator">Cover</span>
+        <button id="nextBtn" class="nav-btn primary" type="button">Next →</button>
+      </nav>
+      <p class="hint" id="hint">Click “Open Portfolio Book” or use the arrows on your keyboard</p>
+    </section>
+    <footer>INTERACTIVE DIGITAL PORTFOLIO · TURN THE PAGES</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
